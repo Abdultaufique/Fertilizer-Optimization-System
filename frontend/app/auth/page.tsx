@@ -22,7 +22,7 @@ export default function AuthPage() {
     if (!loginUsername || !loginPassword) { setError("Please fill in all fields."); return; }
     setError(""); setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:8000/login", {
+      const res = await fetch("https://fertilizer-optimization-system.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: loginUsername, password: loginPassword }),
@@ -40,7 +40,7 @@ export default function AuthPage() {
     if (!regUsername || !regEmail || !regPassword) { setError("Please fill in all fields."); return; }
     setError(""); setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:8000/register", {
+      const res = await fetch("https://fertilizer-optimization-system.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: regUsername, email: regEmail, password: regPassword }),
@@ -163,7 +163,7 @@ export default function AuthPage() {
       </div>
 
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=DM+Sans:wght@400;500&display=swap');
+        @import url('https://fertilizer-optimization-system.onrender.com/fonts.css');
         * { box-sizing: border-box; }
         ::placeholder { color: rgba(255,255,255,0.35); }
         input:-webkit-autofill {
