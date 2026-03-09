@@ -163,7 +163,7 @@ export default function AuthPage() {
       </div>
 
       <style>{`
-        @import url('https://fertilizer-optimization-system.onrender.com/fonts.css');
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=DM+Sans&display=swap');
         * { box-sizing: border-box; }
         ::placeholder { color: rgba(255,255,255,0.35); }
         input:-webkit-autofill {
