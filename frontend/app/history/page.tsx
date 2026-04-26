@@ -13,7 +13,11 @@ export default function HistoryPage() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("https://fertilizer-optimization-system.onrender.com")
+    fetch("https://fertilizer-optimization-system.onrender.com/history", {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch history");
         return res.json();
