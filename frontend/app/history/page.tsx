@@ -13,7 +13,7 @@ export default function HistoryPage() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/history")
+    fetch("https://fertilizer-optimization-system.onrender.com")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch history");
         return res.json();
